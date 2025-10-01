@@ -29,33 +29,13 @@
             color: #007bff;
             border-bottom-color: #007bff;
         }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -30px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #005a9c;
-            border: 3px solid #f0f4f8;
-        }
-        .timeline-path {
-            position: absolute;
-            left: -21px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: #005a9c;
-        }
         #timeline-content {
-            transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.7s ease-in-out;
             max-height: 0;
             overflow: hidden;
         }
         #timeline-content.open {
-            max-height: 5000px; /* Adjust as needed */
+            max-height: 6000px; /* Adjust if needed for content height */
         }
         #timeline-toggle-icon {
             transition: transform 0.3s ease;
@@ -116,6 +96,105 @@
             background-color: #005a9c;
             color: white;
         }
+
+        /* New Timeline Styles */
+        .timeline-container-new {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .timeline-container-new::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: #005a9c;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        .timeline-entry-new {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-entry-new::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid #005a9c;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-left {
+            left: 0;
+        }
+        .timeline-right {
+            left: 50%;
+        }
+        .timeline-left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 32px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .timeline-right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 32px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .timeline-right::after {
+            left: -10px;
+        }
+        .timeline-content-new {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Mobile view for Timeline */
+        @media screen and (max-width: 768px) {
+            .timeline-container-new::after {
+                left: 20px;
+            }
+            .timeline-entry-new {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 15px;
+            }
+            .timeline-entry-new::before {
+                left: 40px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .timeline-left::after, .timeline-right::after {
+                left: 10px;
+            }
+            .timeline-right {
+                left: 0%;
+            }
+        }
+
     </style>
 </head>
 <body class="text-gray-700">
@@ -322,9 +401,9 @@
                     </div>
                 </div>
                 <div class="mt-16 text-center">
-                    <h4 class="text-2xl font-bold mb-4 section-title">Distribuição das equipes de APS no Território</h4>
+                    <h4 class="text-2xl font-bold mb-4 section-title">Distribuição dos Serviços no Território</h4>
                     <iframe src="https://www.google.com/maps/d/embed?mid=1VeSNTBgE38GWmxsit3FoGQNF6oI" class="w-full h-[600px] mx-auto rounded-lg shadow-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p class="mt-2 text-sm text-gray-500">Navegue pelo mapa para localizar sua equipe.</p>
+                    <p class="mt-2 text-sm text-gray-500">Navegue pelo mapa para localizar Centros de Saúde, Policlínicas, UPAs e CAPS.</p>
                 </div>
             </div>
         </section>
@@ -424,11 +503,8 @@
                     </div>
                 </button>
                 <div id="timeline-content">
-                    <div class="relative max-w-4xl mx-auto pt-8">
-                        <div class="timeline-path"></div>
-                        <div class="space-y-12">
-                            <!-- JS will populate this section -->
-                        </div>
+                    <div id="timeline-container-new" class="timeline-container-new mt-8">
+                        <!-- Timeline items will be injected here by JS -->
                     </div>
                 </div>
             </div>
@@ -495,28 +571,36 @@
             { year: '2022', event: 'Inauguração da Policlínica da Mulher e da Criança e criação do Núcleo de Gestão da Qualidade da Vigilância Sanitária.' },
             { year: '2023', event: 'Início do projeto "Trilha de Aprendizagem dos Trabalhadores da SMS" e instituição do Programa Vigidesastres.' },
             { year: '2024', event: 'Lançamento da Política Municipal de Planejamento, instituição do Programa Monitora Saúde Floripa, inauguração do MultiHospital e realização da 1ª Conferência Municipal de Saúde da População Negra.' },
-            { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Gestão e Liderança.' }
+            { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Liderança e Gestão.' }
         ];
-        const timelineContainer = document.querySelector('#timeline-content .space-y-12');
-        const renderTimeline = () => {
-            timelineContainer.innerHTML = '';
-            timelineData.forEach(item => {
-                const timelineItem = document.createElement('div');
-                timelineItem.className = 'relative pl-8';
-                timelineItem.innerHTML = `
-                    <div class="timeline-item">
-                        <p class="font-bold text-lg text-[#005a9c]">${item.year}</p>
-                        <p class="text-gray-600">${item.event}</p>
+        
+        const timelineContainerNew = document.getElementById('timeline-container-new');
+        
+        const renderNewTimeline = () => {
+            timelineContainerNew.innerHTML = ''; // Clear existing items
+
+            timelineData.forEach((item, index) => {
+                const isLeft = index % 2 !== 0; // Use !== for clarity
+                const entryDiv = document.createElement('div');
+                entryDiv.className = `timeline-entry-new ${isLeft ? 'timeline-left' : 'timeline-right'}`;
+
+                entryDiv.innerHTML = `
+                    <div class="timeline-content-new">
+                        <h4 class="font-bold text-lg text-[#005a9c]">${item.year}</h4>
+                        <p class="text-sm text-gray-700 mt-1">${item.event}</p>
                     </div>
                 `;
-                timelineContainer.appendChild(timelineItem);
+                timelineContainerNew.appendChild(entryDiv);
             });
         };
+
         timelineToggle.addEventListener('click', () => {
             timelineContent.classList.toggle('open');
             timelineIcon.classList.toggle('rotate-180');
         });
-        renderTimeline();
+        
+        renderNewTimeline();
+
 
         // Lógica das Abas (Tabs)
         const tabButtons = document.querySelectorAll('.tab-button');
