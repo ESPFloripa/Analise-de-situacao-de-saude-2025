@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Saúde SUS - Florianópolis</title>
+    <title>Análise de Situação de Saúde - Florianópolis 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,6 @@
         .flip-card-front {
             background-color: white;
             color: black;
-            border-left: 5px solid #005a9c;
         }
         .flip-card-back {
             background-color: #005a9c;
@@ -199,20 +198,40 @@
 </head>
 <body class="text-gray-700">
 
+    <!-- Modal Curso Livre -->
+    <div id="curso-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <i data-lucide="x"></i>
+            </button>
+            <h3 class="text-2xl font-bold mb-4 text-[#003366]">Instruções do Curso Livre</h3>
+            <div class="space-y-3 text-gray-700">
+                <p>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</p>
+                <p>Você deve clicar no botão disponível no fim desta página (ou <a href="#" class="text-blue-600 hover:underline">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</p>
+                <p>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
+                <p>Ao responder o teste de aproveitamento coloque o nome completo e CPF conforme você colocou no link de inscrição.</p>
+                <p>A nota de corte para aprovação é de 80%.</p>
+                <p>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</p>
+                <p>O certificado será disponibilizado até o último dia útil do mês seguinte à finalização do curso.</p>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Header & Navegação -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white shadow-md sticky top-0 z-40">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <i data-lucide="hospital" class="text-[#003366] w-8 h-8 mr-2"></i>
                 <h1 class="text-xl font-bold text-[#003366]">SUS Florianópolis</h1>
             </div>
-            <div class="hidden md:flex space-x-6">
+            <div class="hidden md:flex items-center space-x-6">
                 <a href="#populacao" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">População</a>
                 <a href="#determinantes" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Determinantes</a>
                 <a href="#rede" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Rede de Saúde</a>
                 <a href="#resultados" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Resultados</a>
                 <a href="#percepcoes" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Percepções</a>
-                 <a href="#timeline" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Histórico</a>
+                <a href="#timeline" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">Histórico</a>
             </div>
             <div class="md:hidden">
                 <button id="menu-btn" class="text-gray-600 focus:outline-none">
@@ -237,19 +256,30 @@
             <div class="container mx-auto px-6 py-24 text-center">
                 <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Análise da Situação de Saúde de Florianópolis</h2>
                 <p class="text-lg md:text-xl mb-8">Um portal de informações estratégicas para os profissionais da rede SUS.</p>
+                 <button id="curso-hero-btn" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
+                    <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                    Curso Livre
+                </button>
+                <p class="text-sm mt-8">Baseado no documento do Plano Municipal de Saúde 2026-2029.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Acesso Rápido -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="https://sus.floripa.br/pdf/analise_situacao_saude_v1.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#003366] font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto">
+                    <a href="https://sus.floripa.br/pdf/analise_situacao_saude_v1.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#003366] font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md border border-gray-200">
                         <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
                         Acessar Documento
                     </a>
-                    <a href="https://youtu.be/blVHqiQu5oM" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white font-bold py-3 px-6 rounded-full hover:bg-red-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto">
+                    <a href="https://youtu.be/blVHqiQu5oM" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white font-bold py-3 px-6 rounded-full hover:bg-red-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
                         <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
                         Ver Resumo em Vídeo
                     </a>
                 </div>
-                <p class="text-sm mt-8">Baseado no documento do Plano Municipal de Saúde 2026-2029.</p>
             </div>
         </section>
+
 
         <!-- Seção: População e Contexto -->
         <section id="populacao" class="py-20">
@@ -259,7 +289,7 @@
                     <!-- Flip Card 1 -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front border-l-4 border-[#005a9c]">
                                 <i data-lucide="users" class="w-10 h-10 text-[#005a9c] mb-4"></i>
                                 <h4 class="font-bold text-xl mb-2">População 2024</h4>
                                 <p class="text-3xl font-bold text-gray-800">576.361</p>
@@ -273,7 +303,7 @@
                     <!-- Flip Card 2 -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front border-l-4 border-[#005a9c]">
                                 <i data-lucide="trending-up" class="w-10 h-10 text-[#005a9c] mb-4"></i>
                                 <h4 class="font-bold text-xl mb-2">População Idosa</h4>
                                 <p class="text-3xl font-bold text-gray-800">17,5%</p>
@@ -287,7 +317,7 @@
                     <!-- Flip Card 3 -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front border-l-4 border-[#005a9c]">
                                 <i data-lucide="globe" class="w-10 h-10 text-[#005a9c] mb-4"></i>
                                 <h4 class="font-bold text-xl mb-2">Migração</h4>
                                 <p class="text-3xl font-bold text-gray-800">+2.000</p>
@@ -301,7 +331,7 @@
                     <!-- Flip Card 4 -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front border-l-4 border-[#005a9c]">
                                 <i data-lucide="building-2" class="w-10 h-10 text-[#005a9c] mb-4"></i>
                                 <h4 class="font-bold text-xl mb-2">Comunidades Urbanas</h4>
                                 <p class="text-3xl font-bold text-gray-800">8%</p>
@@ -426,7 +456,7 @@
                 </div>
                 <div class="mt-16 text-center">
                     <h4 class="text-2xl font-bold mb-4 section-title">Distribuição dos Serviços no Território</h4>
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1VeSNTBgE38GWmxsit3FoGQNF6oI" class="w-full h-[600px] mx-auto rounded-lg shadow-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1r7fncVf4XlPC2V6ovlhoVms27xuA5Xg" class="w-full h-[600px] mx-auto rounded-lg shadow-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <p class="mt-2 text-sm text-gray-500">Navegue pelo mapa para localizar Centros de Saúde, Policlínicas, UPAs e CAPS.</p>
                 </div>
             </div>
@@ -535,6 +565,23 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Seção: Curso Livre -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold mb-4 section-title">Participe do Curso Livre</h2>
+                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Aprofunde seu conhecimento e obtenha a certificação. Siga os passos abaixo para se inscrever e realizar o teste de aproveitamento.</p>
+                 <div class="flex flex-wrap justify-center gap-6">
+                     <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
+                         Inscrição para o curso livre
+                     </a>
+                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSecipkZL9wcsIRzYVLmrMQbeH_T-eS7DB-nZIzfbmg-6arkJw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
+                         Teste de aproveitamento
+                     </a>
+                 </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -561,6 +608,24 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+
+        // Lógica do Modal do Curso
+        const cursoHeroBtn = document.getElementById('curso-hero-btn');
+        const cursoModal = document.getElementById('curso-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        const openModal = () => cursoModal.classList.remove('hidden');
+        const closeModal = () => cursoModal.classList.add('hidden');
+
+        if(cursoHeroBtn) cursoHeroBtn.addEventListener('click', openModal);
+
+        closeModalBtn.addEventListener('click', closeModal);
+        cursoModal.addEventListener('click', (e) => {
+            if (e.target === cursoModal) {
+                closeModal();
+            }
+        });
+
 
         // Lógica da Timeline Expansível
         const timelineToggle = document.getElementById('timeline-toggle');
@@ -597,7 +662,7 @@
             { year: '2022', event: 'Inauguração da Policlínica da Mulher e da Criança e criação do Núcleo de Gestão da Qualidade da Vigilância Sanitária.' },
             { year: '2023', event: 'Início do projeto "Trilha de Aprendizagem dos Trabalhadores da SMS" e instituição do Programa Vigidesastres.' },
             { year: '2024', event: 'Lançamento da Política Municipal de Planejamento, instituição do Programa Monitora Saúde Floripa, inauguração do MultiHospital e realização da 1ª Conferência Municipal de Saúde da População Negra.' },
-            { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Liderança e Gestão.' }
+            { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Gestão e Liderança.' }
         ];
         
         const timelineContainerNew = document.getElementById('timeline-container-new');
@@ -606,7 +671,7 @@
             timelineContainerNew.innerHTML = ''; // Clear existing items
 
             timelineData.forEach((item, index) => {
-                const isLeft = index % 2 !== 0; // Use !== for clarity
+                const isLeft = index % 2 !== 0; 
                 const entryDiv = document.createElement('div');
                 entryDiv.className = `timeline-entry-new ${isLeft ? 'timeline-left' : 'timeline-right'}`;
 
@@ -652,10 +717,5 @@
     </script>
 </body>
 </html>
-
-
-
-
-
 
 
