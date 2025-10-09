@@ -207,8 +207,8 @@
             <h3 class="text-2xl font-bold mb-4 text-[#003366]">Instruções do Curso Livre</h3>
             <div class="space-y-3 text-gray-700">
                 <p>Este Curso Livre é voltado para profissionais de saúde de nível superior e médio e será certificado com a carga horária de 2 horas/aula.</p>
-                <p>Você deve clicar no botão disponível no fim desta página e preencher todos os campos para se inscrever no curso no mês corrente.</p>
-                <p>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
+                <p>Você deve clicar no botão ao lado e preencher todos os campos para se inscrever no curso no mês corrente.</p>
+                <p>Após a inscrição realizada, você deve explorar o conteúdo e tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
                 <p>Para responder o teste de aproveitamento você deve estar logado em uma conta Google, coloque o nome completo, CPF e e-mail conforme você colocou no link de inscrição.</p>
                 <p>A nota de corte para aprovação é de 80%.</p>
                 <p>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</p>
@@ -256,17 +256,24 @@
             <div class="container mx-auto px-6 py-24 text-center">
                 <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Análise da Situação de Saúde de Florianópolis</h2>
                 <p class="text-lg md:text-xl mb-8">Um portal de informações estratégicas para os profissionais da rede SUS.</p>
-                 <button id="curso-hero-btn" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
-                    <i data-lucide="award" class="w-5 h-5 mr-2"></i>
-                    Curso Livre
-                </button>
+                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button id="curso-hero-btn" class="bg-sky-600 text-white font-bold py-3 px-6 rounded-full hover:bg-sky-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
+                        <i data-lucide="info" class="w-5 h-5 mr-2"></i>
+                        Curso Livre - Instruções
+                    </button>
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full transition-transform transform hover:scale-105 inline-flex items-center justify-center w-full sm:w-auto shadow-lg">
+                        <i data-lucide="edit-3" class="w-5 h-5 mr-2"></i>
+                        Curso Livre - Inscrição
+                    </a>
+                </div>
                 <p class="text-sm mt-8">Baseado no documento do Plano Municipal de Saúde 2026-2029.</p>
             </div>
         </section>
 
         <!-- Seção de Acesso Rápido -->
         <section class="py-12 bg-gray-100">
-            <div class="container mx-auto px-6">
+            <div class="container mx-auto px-6 text-center">
+                <p class="mb-4 text-gray-700">Recomendamos que acessem e leiam o relatório completo disponível no Botão abaixo.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <a href="https://sus.floripa.br/pdf/analise_situacao_saude_v1.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#003366] font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md border border-gray-200">
                         <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
@@ -569,14 +576,11 @@
         <!-- Seção: Curso Livre -->
         <section class="py-20 bg-gray-100">
             <div class="container mx-auto px-6 text-center">
-                 <h2 class="text-3xl font-bold mb-4 section-title">Participe do Curso Livre</h2>
-                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Aprofunde seu conhecimento e obtenha a certificação. Siga os passos abaixo para se inscrever e realizar o teste de aproveitamento.</p>
+                 <h2 class="text-3xl font-bold mb-4 section-title">Teste de Aproveitamento</h2>
+                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Obtenha a certificação. Clique no botão para realizar o teste de aproveitamento. AVISO! O teste de aproveitamento é baseado no relatório completo disponibilizado acima e pode conter informações que você não encontra diretamente na página.</p>
                  <div class="flex flex-wrap justify-center gap-6">
-                     <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
-                         Inscrição para o curso livre
-                     </a>
                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSecipkZL9wcsIRzYVLmrMQbeH_T-eS7DB-nZIzfbmg-6arkJw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
-                         Teste de aproveitamento
+                         Realizar teste de aproveitamento
                      </a>
                  </div>
             </div>
@@ -588,7 +592,7 @@
     <footer class="bg-[#003366] text-white">
         <div class="container mx-auto px-6 py-8 text-center">
             <p>Este portal é uma síntese da "Análise da Situação de Saúde - Florianópolis 2025", parte do Plano Municipal de Saúde 2026-2029.</p>
-            <p class="text-sm mt-2">Secretaria Municipal de Saúde de Florianópolis</p>
+            <p class="text-sm mt-2">Escola de Saúde Pública - Secretaria Municipal de Saúde de Florianópolis</p>
         </div>
     </footer>
 
