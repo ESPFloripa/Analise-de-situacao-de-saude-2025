@@ -223,7 +223,7 @@
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <i data-lucide="hospital" class="text-[#003366] w-8 h-8 mr-2"></i>
-                <h1 class="text-xl font-bold text-[#003366]">SUS Florianópolis</h1>
+                <h1 class="text-xl font-bold text-[#003366]">SUS Florianópolis 2025</h1>
             </div>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#populacao" class="nav-link text-gray-600 font-medium border-b-2 border-transparent">População</a>
@@ -271,321 +271,337 @@
         </section>
 
         <!-- Seção de Acesso Rápido -->
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto px-6 text-center">
-                <p class="mb-4 text-gray-700">Recomendamos que acessem e leiam o relatório completo disponível no Botão abaixo.</p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="https://sus.floripa.br/pdf/analise_situacao_saude_v1.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#003366] font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md border border-gray-200">
-                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
-                        Acessar Documento
-                    </a>
-                    <a href="https://youtu.be/blVHqiQu5oM" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white font-bold py-3 px-6 rounded-full hover:bg-red-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
-                        <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
-                        Ver Resumo em Vídeo
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Seção: População e Contexto -->
-        <section id="populacao" class="py-20">
+        <section id="start-section" class="py-12 bg-gray-100 text-center">
             <div class="container mx-auto px-6">
-                <h3 class="text-3xl font-bold text-center mb-12 section-title">População e Contexto: Quem Vive em Florianópolis?</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Flip Card 1 -->
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front border-l-4 border-[#005a9c]">
-                                <i data-lucide="users" class="w-10 h-10 text-[#005a9c] mb-4"></i>
-                                <h4 class="font-bold text-xl mb-2">População 2024</h4>
-                                <p class="text-3xl font-bold text-gray-800">576.361</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h4 class="font-bold text-lg mb-2">Crescimento Populacional</h4>
-                                <p>Aumento de 27,5% entre 2010 e 2022, impulsionado pela migração interna e internacional.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Flip Card 2 -->
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front border-l-4 border-[#005a9c]">
-                                <i data-lucide="trending-up" class="w-10 h-10 text-[#005a9c] mb-4"></i>
-                                <h4 class="font-bold text-xl mb-2">População Idosa</h4>
-                                <p class="text-3xl font-bold text-gray-800">17,5%</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h4 class="font-bold text-lg mb-2">Envelhecimento</h4>
-                                <p>O percentual de pessoas com 60 anos ou mais é superior à média nacional, indicando aumento na demanda por cuidados contínuos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Flip Card 3 -->
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front border-l-4 border-[#005a9c]">
-                                <i data-lucide="globe" class="w-10 h-10 text-[#005a9c] mb-4"></i>
-                                <h4 class="font-bold text-xl mb-2">Migração</h4>
-                                <p class="text-3xl font-bold text-gray-800">+2.000</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h4 class="font-bold text-lg mb-2">Refúgio e Diversidade</h4>
-                                <p>Mais de 2.000 solicitações de refúgio entre 2021-2024, principalmente de cubanos, alterando o perfil demográfico.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Flip Card 4 -->
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front border-l-4 border-[#005a9c]">
-                                <i data-lucide="building-2" class="w-10 h-10 text-[#005a9c] mb-4"></i>
-                                <h4 class="font-bold text-xl mb-2">Comunidades Urbanas</h4>
-                                <p class="text-3xl font-bold text-gray-800">8%</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h4 class="font-bold text-lg mb-2">Desigualdade Territorial</h4>
-                                <p>Cerca de 8% da população vive em favelas e comunidades, enfrentando maiores desafios de acesso a serviços.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção: Determinantes de Saúde -->
-        <section id="determinantes" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h3 class="text-3xl font-bold text-center mb-12 section-title">Determinantes de Saúde: O Contexto da População</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <i data-lucide="leaf" class="w-8 h-8 text-green-600 mr-4"></i>
-                            <h4 class="font-bold text-xl">Fatores Ambientais</h4>
-                        </div>
-                        <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                            <li><span class="font-semibold">Saneamento:</span> Apenas 57% dos domicílios têm rede de esgoto.</li>
-                            <li><span class="font-semibold">Riscos Naturais:</span> +150 mil pessoas em áreas de risco de inundação.</li>
-                            <li><span class="font-semibold">Zoonoses:</span> Casos de esporotricose humana cresceram 900% (2021-2024).</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                         <div class="flex items-center mb-4">
-                            <i data-lucide="briefcase" class="w-8 h-8 text-blue-600 mr-4"></i>
-                            <h4 class="font-bold text-xl">Fatores Socioeconômicos</h4>
-                        </div>
-                        <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                            <li><span class="font-semibold">Renda:</span> Apesar da alta renda média, 30% das famílias cadastradas vivem em pobreza.</li>
-                             <li><span class="font-semibold">Violência:</span> Taxa de notificações de violência 28% superior à média estadual.</li>
-                            <li><span class="font-semibold">Educação:</span> Baixa taxa de analfabetismo (1,4%), mas desafios no ensino médio.</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                         <div class="flex items-center mb-4">
-                            <i data-lucide="bike" class="w-8 h-8 text-orange-600 mr-4"></i>
-                            <h4 class="font-bold text-xl">Fatores Comportamentais</h4>
-                        </div>
-                        <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                            <li><span class="font-semibold">Álcool:</span> Maior taxa de consumo abusivo entre mulheres das capitais.</li>
-                            <li><span class="font-semibold">Alimentação:</span> Lidera consumo de frutas/hortaliças, mas 56,8% têm excesso de peso.</li>
-                            <li><span class="font-semibold">Atividade Física:</span> 47,3% praticam o suficiente, acima da média nacional.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção: Rede de Atenção à Saúde -->
-        <section id="rede" class="py-20">
-            <div class="container mx-auto px-6">
-                <h3 class="text-3xl font-bold text-center mb-12 section-title">A Estrutura da Rede de Atenção à Saúde</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                     <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/pJkcPbK.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Atenção Primária</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">50 Centros de Saúde, 175 equipes de ESF/EAP e 13 eMulti. Porta de entrada e ordenadora do cuidado.</p></div>
-                        </div>
-                    </div>
-                     <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/Cv3RlIg.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Urgência e Emergência</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">3 UPAs 24h (Norte, Sul, Continente) e SAMU para atendimento de situações agudas e risco de vida.</p></div>
-                        </div>
-                    </div>
-                     <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/TBJ3tBH.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Atenção Especializada</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">4 Policlínicas, CEOs e o novo Multihospital, que inclui Hospital Dia, ampliando acesso a cirurgias e exames.</p></div>
-                        </div>
-                    </div>
-                     <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/dXPM7wu.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Atenção Psicossocial</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">5 CAPS (incluindo AD, Infantil e 24h) para cuidado integral em saúde mental.</p></div>
-                        </div>
-                    </div>
-                     <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/io45h6S.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Assistência Farmacêutica</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">Rede com 50 farmácias básicas, 10 de referência e 1 especializada para garantir acesso a medicamentos.</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card h-48">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/8fMcDkp.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-xl text-white">Vigilância em Saúde</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-center"><p class="text-sm">Ações integradas de vigilância sanitária, epidemiológica, ambiental e de zoonoses para prevenção de riscos.</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16 text-center">
-                    <h4 class="text-2xl font-bold mb-4 section-title">Distribuição dos Serviços no Território</h4>
-                    <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1r7fncVf4XlPC2V6ovlhoVms27xuA5Xg" class="w-full h-[600px] mx-auto rounded-lg shadow-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p class="mt-2 text-sm text-gray-500">Navegue pelo mapa para localizar Centros de Saúde, Policlínicas, UPAs e CAPS.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção: Resultados -->
-        <section id="resultados" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                 <h3 class="text-3xl font-bold text-center mb-12 section-title">Resultados em Destaque: Desempenho e Desafios</h3>
-                 
-                 <!-- Tabs -->
-                <div class="mb-4 flex justify-center border-b border-gray-200">
-                    <button class="tab-button active py-2 px-6 bg-transparent text-gray-500 font-medium" data-tab="servicos">Resultados dos Serviços</button>
-                    <button class="tab-button py-2 px-6 bg-transparent text-gray-500 font-medium" data-tab="saude">Resultados em Saúde</button>
-                </div>
-
-                <!-- Tab Content -->
-                <div id="servicos" class="tab-content">
-                     <div class="grid md:grid-cols-2 gap-8 mt-8">
-                        <div class="p-6 bg-blue-50 rounded-lg flex items-start"><i data-lucide="bar-chart-3" class="w-8 h-8 text-blue-600 mr-4 mt-1"></i><div><strong>Acesso à APS:</strong> Atendimentos cresceram 51% entre 2020-2024, mas consultas de enfermagem caíram.</div></div>
-                        <div class="p-6 bg-red-50 rounded-lg flex items-start"><i data-lucide="syringe" class="w-8 h-8 text-red-600 mr-4 mt-1"></i><div><strong>Vacinação Infantil:</strong> Apenas 21,7% das crianças de 1 ano com esquema vacinal completo em 2024.</div></div>
-                        <div class="p-6 bg-yellow-50 rounded-lg flex items-start"><i data-lucide="hourglass" class="w-8 h-8 text-yellow-600 mr-4 mt-1"></i><div><strong>Atenção Especializada:</strong> Persistem longas filas para ultrassonografia, colonoscopia e ressonância.</div></div>
-                        <div class="p-6 bg-green-50 rounded-lg flex items-start"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 mr-4 mt-1"></i><div><strong>Avanço com Multihospital:</strong> +42 mil consultas e +220 mil exames em menos de um ano, reduzindo filas.</div></div>
-                     </div>
-                </div>
-
-                <div id="saude" class="tab-content hidden">
-                     <div class="grid md:grid-cols-2 gap-8 mt-8">
-                         <div class="p-6 bg-blue-50 rounded-lg flex items-start"><i data-lucide="heart-pulse" class="w-8 h-8 text-blue-600 mr-4 mt-1"></i><div><strong>Mortalidade:</strong> Óbitos precoces (&lt;70 anos) em queda, mas com grande iniquidade racial (homens negros morrem mais cedo).</div></div>
-                         <div class="p-6 bg-red-50 rounded-lg flex items-start"><i data-lucide="skull" class="w-8 h-8 text-red-600 mr-4 mt-1"></i><div><strong>Causas de Morte:</strong> Doenças crônicas lideram. Suicídio apresenta tendência de crescimento preocupante.</div></div>
-                         <div class="p-6 bg-yellow-50 rounded-lg flex items-start"><i data-lucide="bed-double" class="w-8 h-8 text-yellow-600 mr-4 mt-1"></i><div><strong>Morbidade:</strong> 14% das internações são por Condições Sensíveis à APS (ICSAP), indicando espaço para prevenção.</div></div>
-                         <div class="p-6 bg-green-50 rounded-lg flex items-start"><i data-lucide="virus" class="w-8 h-8 text-green-600 mr-4 mt-1"></i><div><strong>Doenças Infecciosas:</strong> Tendência de queda no HIV, mas aumento na incidência de Dengue e Tuberculose.</div></div>
-                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção: Percepções -->
-        <section id="percepcoes" class="py-20">
-            <div class="container mx-auto px-6">
-                <h3 class="text-3xl font-bold text-center mb-12 section-title">A Voz de Quem Faz e Usa o SUS</h3>
-                <div class="grid md:grid-cols-2 gap-12">
-                     <div class="flip-card h-96">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/qKoHrfI.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-2xl text-white">Percepção dos Trabalhadores</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-left">
-                                <p class="mb-2 font-semibold">Pontos Críticos:</p>
-                                <ul class="list-disc list-inside space-y-1 text-sm">
-                                    <li>Falta de pessoal e sobrecarga.</li>
-                                    <li>Infraestrutura e equipamentos inadequados.</li>
-                                    <li>Falta de plano de carreira e valorização.</li>
-                                    <li>Comunicação institucional frágil.</li>
-                                </ul>
-                                 <p class="mt-4 mb-2 font-semibold">Potencialidades:</p>
-                                 <ul class="list-disc list-inside space-y-1 text-sm">
-                                    <li>Fortes relações de equipe e apoio mútuo.</li>
-                                    <li>Comprometimento com o serviço público.</li>
-                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="flip-card h-96">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/Mqu0mLs.jpg');">
-                                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
-                                    <h4 class="font-bold text-2xl text-white">Percepção dos Usuários</h4>
-                                </div>
-                            </div>
-                            <div class="flip-card-back text-left">
-                                <p class="mb-2 font-semibold">Pontos Críticos:</p>
-                                <ul class="list-disc list-inside space-y-1 text-sm">
-                                    <li>Dificuldade para marcar consultas na APS.</li>
-                                    <li>Longa espera por especialistas e exames.</li>
-                                    <li>Sistema de regulação pouco transparente.</li>
-                                    <li>Comunicação falha (telefone/WhatsApp).</li>
-                                </ul>
-                                <p class="mt-4 mb-2 font-semibold">Potencialidades:</p>
-                                 <ul class="list-disc list-inside space-y-1 text-sm">
-                                    <li>Vínculo e acolhimento dos profissionais.</li>
-                                    <li>Serviços como vacinação bem avaliados.</li>
-                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção: Linha do Tempo -->
-        <section id="timeline" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <button id="timeline-toggle" class="w-full text-left mb-4 focus:outline-none">
-                    <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
-                        <h3 class="text-3xl font-bold section-title">Marcos Históricos da Saúde em Florianópolis</h3>
-                        <i id="timeline-toggle-icon" data-lucide="chevron-down"></i>
-                    </div>
+                <p class="mb-4 font-semibold text-gray-700">Após ler as instruções e fazer sua inscrição, clique em iniciar para explorar o conteúdo!</p>
+                <button id="start-btn" class="mt-4 bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition duration-300 inline-flex items-center justify-center shadow-lg">
+                    <i data-lucide="play" class="w-5 h-5 mr-2"></i>
+                    Iniciar
                 </button>
-                <div id="timeline-content">
-                    <div id="timeline-container-new" class="timeline-container-new mt-8">
-                        <!-- Timeline items will be injected here by JS -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Seção: Curso Livre -->
-        <section class="py-20 bg-gray-100">
-            <div class="container mx-auto px-6 text-center">
-                 <h2 class="text-3xl font-bold mb-4 section-title">Teste de Aproveitamento</h2>
-                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Obtenha a certificação. Clique no botão para realizar o teste de aproveitamento. AVISO! O teste de aproveitamento é baseado no relatório completo disponibilizado acima e pode conter informações que você não encontra diretamente na página.</p>
-                 <div class="flex flex-wrap justify-center gap-6">
-                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSecipkZL9wcsIRzYVLmrMQbeH_T-eS7DB-nZIzfbmg-6arkJw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
-                         Realizar teste de aproveitamento
-                     </a>
-                 </div>
             </div>
         </section>
 
+        <div id="main-content" class="hidden">
+            <section class="py-12 bg-gray-100 text-center">
+                 <div class="container mx-auto px-6">
+                    <p class="mb-4 text-gray-700">Recomendamos que iniciem acessando o relatório completo disponível no botão abaixo e na sequencia vejam o resumo em vídeo.</p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="https://sus.floripa.br/pdf/analise_situacao_saude_v1.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#003366] font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md border border-gray-200">
+                            <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                                Acessar Documento
+                            </a>
+                            <a href="https://youtu.be/blVHqiQu5oM" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white font-bold py-3 px-6 rounded-full hover:bg-red-700 transition duration-300 inline-flex items-center justify-center w-full sm:w-auto shadow-md">
+                                <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
+                                Ver Resumo em Vídeo
+                            </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="py-8 bg-white text-center">
+                <div class="container mx-auto px-6">
+                     <p class="text-lg font-semibold text-teal-800">Após visualizar o Relatório e o Vídeo, explore o restante do material antes de fazer o Teste de Aproveitamento que se encontra ao final da página.</p>
+                </div>
+            </section>
+
+            <!-- Seção: População e Contexto -->
+            <section id="populacao" class="py-20">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-3xl font-bold text-center mb-12 section-title">População e Contexto: Quem Vive em Florianópolis?</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Flip Card 1 -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front border-l-4 border-[#005a9c]">
+                                    <i data-lucide="users" class="w-10 h-10 text-[#005a9c] mb-4"></i>
+                                    <h4 class="font-bold text-xl mb-2">População 2024</h4>
+                                    <p class="text-3xl font-bold text-gray-800">576.361</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 class="font-bold text-lg mb-2">Crescimento Populacional</h4>
+                                    <p>Aumento de 27,5% entre 2010 e 2022, impulsionado pela migração interna e internacional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 2 -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front border-l-4 border-[#005a9c]">
+                                    <i data-lucide="trending-up" class="w-10 h-10 text-[#005a9c] mb-4"></i>
+                                    <h4 class="font-bold text-xl mb-2">População Idosa</h4>
+                                    <p class="text-3xl font-bold text-gray-800">17,5%</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 class="font-bold text-lg mb-2">Envelhecimento</h4>
+                                    <p>O percentual de pessoas com 60 anos ou mais é superior à média nacional, indicando aumento na demanda por cuidados contínuos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 3 -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front border-l-4 border-[#005a9c]">
+                                    <i data-lucide="globe" class="w-10 h-10 text-[#005a9c] mb-4"></i>
+                                    <h4 class="font-bold text-xl mb-2">Migração</h4>
+                                    <p class="text-3xl font-bold text-gray-800">+2.000</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 class="font-bold text-lg mb-2">Refúgio e Diversidade</h4>
+                                    <p>Mais de 2.000 solicitações de refúgio entre 2021-2024, principalmente de cubanos, alterando o perfil demográfico.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 4 -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front border-l-4 border-[#005a9c]">
+                                    <i data-lucide="building-2" class="w-10 h-10 text-[#005a9c] mb-4"></i>
+                                    <h4 class="font-bold text-xl mb-2">Comunidades Urbanas</h4>
+                                    <p class="text-3xl font-bold text-gray-800">8%</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 class="font-bold text-lg mb-2">Desigualdade Territorial</h4>
+                                    <p>Cerca de 8% da população vive em favelas e comunidades, enfrentando maiores desafios de acesso a serviços.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção: Determinantes de Saúde -->
+            <section id="determinantes" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-3xl font-bold text-center mb-12 section-title">Determinantes de Saúde: O Contexto da População</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="leaf" class="w-8 h-8 text-green-600 mr-4"></i>
+                                <h4 class="font-bold text-xl">Fatores Ambientais</h4>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                                <li><span class="font-semibold">Saneamento:</span> Apenas 57% dos domicílios têm rede de esgoto.</li>
+                                <li><span class="font-semibold">Riscos Naturais:</span> +150 mil pessoas em áreas de risco de inundação.</li>
+                                <li><span class="font-semibold">Zoonoses:</span> Casos de esporotricose humana cresceram 900% (2021-2024).</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                             <div class="flex items-center mb-4">
+                                <i data-lucide="briefcase" class="w-8 h-8 text-blue-600 mr-4"></i>
+                                <h4 class="font-bold text-xl">Fatores Socioeconômicos</h4>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                                <li><span class="font-semibold">Renda:</span> Apesar da alta renda média, 30% das famílias cadastradas vivem em pobreza.</li>
+                                 <li><span class="font-semibold">Violência:</span> Taxa de notificações de violência 28% superior à média estadual.</li>
+                                <li><span class="font-semibold">Educação:</span> Baixa taxa de analfabetismo (1,4%), mas desafios no ensino médio.</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                             <div class="flex items-center mb-4">
+                                <i data-lucide="bike" class="w-8 h-8 text-orange-600 mr-4"></i>
+                                <h4 class="font-bold text-xl">Fatores Comportamentais</h4>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                                <li><span class="font-semibold">Álcool:</span> Maior taxa de consumo abusivo entre mulheres das capitais.</li>
+                                <li><span class="font-semibold">Alimentação:</span> Lidera consumo de frutas/hortaliças, mas 56,8% têm excesso de peso.</li>
+                                <li><span class="font-semibold">Atividade Física:</span> 47,3% praticam o suficiente, acima da média nacional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção: Rede de Atenção à Saúde -->
+            <section id="rede" class="py-20">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-3xl font-bold text-center mb-12 section-title">A Estrutura da Rede de Atenção à Saúde</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                         <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/pJkcPbK.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Atenção Primária</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">50 Centros de Saúde, 175 equipes de ESF/EAP e 13 eMulti. Porta de entrada e ordenadora do cuidado.</p></div>
+                            </div>
+                        </div>
+                         <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/Cv3RlIg.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Urgência e Emergência</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">3 UPAs 24h (Norte, Sul, Continente) e SAMU para atendimento de situações agudas e risco de vida.</p></div>
+                            </div>
+                        </div>
+                         <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/TBJ3tBH.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Atenção Especializada</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">4 Policlínicas, CEOs e o novo Multihospital, que inclui Hospital Dia, ampliando acesso a cirurgias e exames.</p></div>
+                            </div>
+                        </div>
+                         <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/dXPM7wu.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Atenção Psicossocial</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">5 CAPS (incluindo AD, Infantil e 24h) para cuidado integral em saúde mental.</p></div>
+                            </div>
+                        </div>
+                         <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/io45h6S.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Assistência Farmacêutica</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">Rede com 50 farmácias básicas, 10 de referência e 1 especializada para garantir acesso a medicamentos.</p></div>
+                            </div>
+                        </div>
+                        <div class="flip-card h-48">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/8fMcDkp.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-xl text-white">Vigilância em Saúde</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-center"><p class="text-sm">Ações integradas de vigilância sanitária, epidemiológica, ambiental e de zoonoses para prevenção de riscos.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 text-center">
+                        <h4 class="text-2xl font-bold mb-4 section-title">Distribuição dos Serviços no Território</h4>
+                        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1r7fncVf4XlPC2V6ovlhoVms27xuA5Xg" class="w-full h-[600px] mx-auto rounded-lg shadow-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="mt-2 text-sm text-gray-500">Navegue pelo mapa para localizar Centros de Saúde, Policlínicas, UPAs e CAPS.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção: Resultados -->
+            <section id="resultados" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                     <h3 class="text-3xl font-bold text-center mb-12 section-title">Resultados em Destaque: Desempenho e Desafios</h3>
+                     
+                     <!-- Tabs -->
+                    <div class="mb-4 flex justify-center border-b border-gray-200">
+                        <button class="tab-button active py-2 px-6 bg-transparent text-gray-500 font-medium" data-tab="servicos">Resultados dos Serviços</button>
+                        <button class="tab-button py-2 px-6 bg-transparent text-gray-500 font-medium" data-tab="saude">Resultados em Saúde</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="servicos" class="tab-content">
+                         <div class="grid md:grid-cols-2 gap-8 mt-8">
+                            <div class="p-6 bg-blue-50 rounded-lg flex items-start"><i data-lucide="bar-chart-3" class="w-8 h-8 text-blue-600 mr-4 mt-1"></i><div><strong>Acesso à APS:</strong> Atendimentos cresceram 51% entre 2020-2024, mas consultas de enfermagem caíram.</div></div>
+                            <div class="p-6 bg-red-50 rounded-lg flex items-start"><i data-lucide="syringe" class="w-8 h-8 text-red-600 mr-4 mt-1"></i><div><strong>Vacinação Infantil:</strong> Apenas 21,7% das crianças de 1 ano com esquema vacinal completo em 2024.</div></div>
+                            <div class="p-6 bg-yellow-50 rounded-lg flex items-start"><i data-lucide="hourglass" class="w-8 h-8 text-yellow-600 mr-4 mt-1"></i><div><strong>Atenção Especializada:</strong> Persistem longas filas para ultrassonografia, colonoscopia e ressonância.</div></div>
+                            <div class="p-6 bg-green-50 rounded-lg flex items-start"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 mr-4 mt-1"></i><div><strong>Avanço com Multihospital:</strong> +42 mil consultas e +220 mil exames em menos de um ano, reduzindo filas.</div></div>
+                         </div>
+                    </div>
+
+                    <div id="saude" class="tab-content hidden">
+                         <div class="grid md:grid-cols-2 gap-8 mt-8">
+                             <div class="p-6 bg-blue-50 rounded-lg flex items-start"><i data-lucide="heart-pulse" class="w-8 h-8 text-blue-600 mr-4 mt-1"></i><div><strong>Mortalidade:</strong> Óbitos precoces (&lt;70 anos) em queda, mas com grande iniquidade racial (homens negros morrem mais cedo).</div></div>
+                             <div class="p-6 bg-red-50 rounded-lg flex items-start"><i data-lucide="skull" class="w-8 h-8 text-red-600 mr-4 mt-1"></i><div><strong>Causas de Morte:</strong> Doenças crônicas lideram. Suicídio apresenta tendência de crescimento preocupante.</div></div>
+                             <div class="p-6 bg-yellow-50 rounded-lg flex items-start"><i data-lucide="bed-double" class="w-8 h-8 text-yellow-600 mr-4 mt-1"></i><div><strong>Morbidade:</strong> 14% das internações são por Condições Sensíveis à APS (ICSAP), indicando espaço para prevenção.</div></div>
+                             <div class="p-6 bg-green-50 rounded-lg flex items-start"><i data-lucide="virus" class="w-8 h-8 text-green-600 mr-4 mt-1"></i><div><strong>Doenças Infecciosas:</strong> Tendência de queda no HIV, mas aumento na incidência de Dengue e Tuberculose.</div></div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção: Percepções -->
+            <section id="percepcoes" class="py-20">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-3xl font-bold text-center mb-12 section-title">A Voz de Quem Faz e Usa o SUS</h3>
+                    <div class="grid md:grid-cols-2 gap-12">
+                         <div class="flip-card h-96">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/qKoHrfI.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-2xl text-white">Percepção dos Trabalhadores</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-left">
+                                    <p class="mb-2 font-semibold">Pontos Críticos:</p>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>Falta de pessoal e sobrecarga.</li>
+                                        <li>Infraestrutura e equipamentos inadequados.</li>
+                                        <li>Falta de plano de carreira e valorização.</li>
+                                        <li>Comunicação institucional frágil.</li>
+                                    </ul>
+                                     <p class="mt-4 mb-2 font-semibold">Potencialidades:</p>
+                                     <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>Fortes relações de equipe e apoio mútuo.</li>
+                                        <li>Comprometimento com o serviço público.</li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="flip-card h-96">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-cover bg-center flex justify-center items-center p-4" style="background-image: url('https://i.imgur.com/Mqu0mLs.jpg');">
+                                    <div class="bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                                        <h4 class="font-bold text-2xl text-white">Percepção dos Usuários</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back text-left">
+                                    <p class="mb-2 font-semibold">Pontos Críticos:</p>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>Dificuldade para marcar consultas na APS.</li>
+                                        <li>Longa espera por especialistas e exames.</li>
+                                        <li>Sistema de regulação pouco transparente.</li>
+                                        <li>Comunicação falha (telefone/WhatsApp).</li>
+                                    </ul>
+                                    <p class="mt-4 mb-2 font-semibold">Potencialidades:</p>
+                                     <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>Vínculo e acolhimento dos profissionais.</li>
+                                        <li>Serviços como vacinação bem avaliados.</li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção: Linha do Tempo -->
+            <section id="timeline" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <button id="timeline-toggle" class="w-full text-left mb-4 focus:outline-none">
+                        <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                            <h3 class="text-3xl font-bold section-title">Marcos Históricos da Saúde em Florianópolis</h3>
+                            <i id="timeline-toggle-icon" data-lucide="chevron-down"></i>
+                        </div>
+                    </button>
+                    <div id="timeline-content">
+                        <div id="timeline-container-new" class="timeline-container-new mt-8">
+                            <!-- Timeline items will be injected here by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção: Teste de Aproveitamento -->
+            <section class="py-20 bg-gray-100">
+                <div class="container mx-auto px-6 text-center">
+                     <h2 class="text-3xl font-bold mb-4 section-title">Teste de Aproveitamento</h2>
+                     <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Obtenha a certificação. Clique no botão para realizar o teste de aproveitamento. AVISO! O teste de aproveitamento é baseado no relatório completo disponibilizado acima e pode conter informações que você não encontra em destaque na página.</p>
+                     <div class="flex flex-wrap justify-center gap-6">
+                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSecipkZL9wcsIRzYVLmrMQbeH_T-eS7DB-nZIzfbmg-6arkJw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
+                             Realizar teste de aproveitamento
+                         </a>
+                     </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -597,127 +613,158 @@
     </footer>
 
     <script>
-        // Ícones Lucide
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ícones Lucide
+            lucide.createIcons();
 
-        // Lógica do Menu Mobile
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Lógica do Modal do Curso
-        const cursoHeroBtn = document.getElementById('curso-hero-btn');
-        const cursoModal = document.getElementById('curso-modal');
-        const closeModalBtn = document.getElementById('close-modal-btn');
-
-        const openModal = () => cursoModal.classList.remove('hidden');
-        const closeModal = () => cursoModal.classList.add('hidden');
-
-        if(cursoHeroBtn) cursoHeroBtn.addEventListener('click', openModal);
-
-        closeModalBtn.addEventListener('click', closeModal);
-        cursoModal.addEventListener('click', (e) => {
-            if (e.target === cursoModal) {
-                closeModal();
+            // Lógica do Menu Mobile
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
             }
-        });
 
 
-        // Lógica da Timeline Expansível
-        const timelineToggle = document.getElementById('timeline-toggle');
-        const timelineContent = document.getElementById('timeline-content');
-        const timelineIcon = document.getElementById('timeline-toggle-icon');
-        const timelineData = [
-            { year: '1988', event: 'Criação do Fundo Municipal de Saúde, marco da autonomia da saúde pública na cidade.' },
-            { year: '1989', event: 'Formação do Conselho Municipal de Saúde de Florianópolis para diálogo e controle social no SUS.' },
-            { year: '1992', event: 'Início da municipalização das ações de vigilância sanitária.' },
-            { year: '1993', event: 'Surgimento do Programa Municipal de DST/Aids.' },
-            { year: '1994', event: 'Implantação do Programa Saúde da Família (PSF).' },
-            { year: '1995', event: 'Início da municipalização das ações de vigilância epidemiológica.' },
-            { year: '1997', event: 'Criação do Programa Capital Criança, com foco na saúde materno-infantil.' },
-            { year: '2000', event: 'Implantação dos primeiros Centros de Atenção Psicossocial (CAPS).' },
-            { year: '2002', event: 'Início da informatização das unidades com o sistema InfoSaúde e lançamento da Residência Multiprofissional em Saúde da Família.' },
-            { year: '2004', event: 'Inauguração do primeiro serviço de Pronto Atendimento no Norte da Ilha.' },
-            { year: '2005', event: 'Adesão ao Programa Brasil Sorridente, fortalecendo a saúde bucal.' },
-            { year: '2006', event: 'Implantação dos primeiros Centros de Especialidades Odontológicas (CEOs) e publicação do Código Sanitário Municipal.' },
-            { year: '2007', event: 'Estabelecimento da Política Municipal de Saúde centrada na ESF, inauguração da Policlínica Centro e início da vacinação de recém-nascidos nas maternidades.' },
-            { year: '2008', event: 'Inauguração da UPA Sul, Policlínica Sul e Policlínica Continente; incorporação do LAMUF à Vigilância em Saúde; criação do Centro de Controle de Zoonoses.' },
-            { year: '2009', event: 'Inauguração da Policlínica e UPA Norte e implantação da Regulação do Acesso Ambulatorial.' },
-            { year: '2010', event: 'Realização do Planejamento Estratégico da SMS, conclusão da informatização de 100% das unidades e criação da Diretoria de Bem-Estar Animal.' },
-            { year: '2011', event: 'Florianópolis é premiada no InovaSUS pela estratégia de Educação Permanente e publica o primeiro Protocolo Municipal de Atenção à Saúde Bucal.' },
-            { year: '2012', event: 'Lançamento do Prêmio de Boas Práticas em Saúde.' },
-            { year: '2013', event: 'Novo prêmio no InovaSUS pelo projeto de Monitoramento do Planejamento e implantação do Modelo de Consulta de Enfermagem (CIPE).' },
-            { year: '2014', event: 'Implementação da Política Municipal de Educação Permanente, criação da Comissão de Sistematização da Assistência de Enfermagem, início da Residência Médica em Medicina de Família, destaque no PMAQ e novo prêmio InovaSUS.' },
-            { year: '2015', event: 'Implantação da Residência Multiprofissional em parceria com a UDESC, alcance de 100% de cobertura da ESF, criação da CFT e VISAT, e início do projeto Ambulatório Trans.' },
-            { year: '2016', event: 'Criação da Escola de Saúde Pública, implantação dos Protocolos de Enfermagem e publicação da Política Municipal de Atenção Primária à Saúde (PMAPS).' },
-            { year: '2017', event: 'Instituição da Política Municipal de Regulação.' },
-            { year: '2018', event: 'Instituição da Comissão Intersetorial da Rede Vida no Trânsito.' },
-            { year: '2019', event: 'Inauguração da UPA Continente e participação no Laboratório de Inovação em Saúde da Enfermagem.' },
-            { year: '2020', event: 'Criação do Grupo Sanear Floripa, enfrentamento da pandemia de COVID-19, implantação do serviço "Alô Saúde" e início da Residência Médica em Psiquiatria.' },
-            { year: '2021', event: 'Reconhecimento nacional no Laboratório de Inovação em Enfermagem (Cofen/OPAS).' },
-            { year: '2022', event: 'Inauguração da Policlínica da Mulher e da Criança e criação do Núcleo de Gestão da Qualidade da Vigilância Sanitária.' },
-            { year: '2023', event: 'Início do projeto "Trilha de Aprendizagem dos Trabalhadores da SMS" e instituição do Programa Vigidesastres.' },
-            { year: '2024', event: 'Lançamento da Política Municipal de Planejamento, instituição do Programa Monitora Saúde Floripa, inauguração do MultiHospital e realização da 1ª Conferência Municipal de Saúde da População Negra.' },
-            { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Gestão e Liderança.' }
-        ];
-        
-        const timelineContainerNew = document.getElementById('timeline-container-new');
-        
-        const renderNewTimeline = () => {
-            timelineContainerNew.innerHTML = ''; // Clear existing items
+            // Lógica do Modal do Curso
+            const cursoHeroBtn = document.getElementById('curso-hero-btn');
+            const cursoModal = document.getElementById('curso-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
 
-            timelineData.forEach((item, index) => {
-                const isLeft = index % 2 !== 0; 
-                const entryDiv = document.createElement('div');
-                entryDiv.className = `timeline-entry-new ${isLeft ? 'timeline-left' : 'timeline-right'}`;
+            const openModal = () => {
+                if (cursoModal) cursoModal.classList.remove('hidden');
+            };
+            const closeModal = () => {
+                if (cursoModal) cursoModal.classList.add('hidden');
+            };
 
-                entryDiv.innerHTML = `
-                    <div class="timeline-content-new">
-                        <h4 class="font-bold text-lg text-[#005a9c]">${item.year}</h4>
-                        <p class="text-sm text-gray-700 mt-1">${item.event}</p>
-                    </div>
-                `;
-                timelineContainerNew.appendChild(entryDiv);
-            });
-        };
+            if (cursoHeroBtn) cursoHeroBtn.addEventListener('click', openModal);
 
-        timelineToggle.addEventListener('click', () => {
-            timelineContent.classList.toggle('open');
-            timelineIcon.classList.toggle('rotate-180');
-        });
-        
-        renderNewTimeline();
-
-
-        // Lógica das Abas (Tabs)
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const tabId = button.dataset.tab;
-
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                tabContents.forEach(content => {
-                    if (content.id === tabId) {
-                        content.classList.remove('hidden');
-                    } else {
-                        content.classList.add('hidden');
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeModal);
+            }
+            
+            if (cursoModal) {
+                cursoModal.addEventListener('click', (e) => {
+                    if (e.target === cursoModal) {
+                        closeModal();
                     }
+                });
+            }
+
+
+            // Lógica do Botão Iniciar
+            const startBtn = document.getElementById('start-btn');
+            const mainContent = document.getElementById('main-content');
+            const startSection = document.getElementById('start-section');
+
+            if (startBtn && mainContent && startSection) {
+                startBtn.addEventListener('click', () => {
+                    mainContent.classList.remove('hidden');
+                    startSection.style.display = 'none';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+
+
+            // Lógica da Timeline Expansível
+            const timelineToggle = document.getElementById('timeline-toggle');
+            const timelineContent = document.getElementById('timeline-content');
+            const timelineIcon = document.getElementById('timeline-toggle-icon');
+            const timelineData = [
+                { year: '1988', event: 'Criação do Fundo Municipal de Saúde, marco da autonomia da saúde pública na cidade.' },
+                { year: '1989', event: 'Formação do Conselho Municipal de Saúde de Florianópolis para diálogo e controle social no SUS.' },
+                { year: '1992', event: 'Início da municipalização das ações de vigilância sanitária.' },
+                { year: '1993', event: 'Surgimento do Programa Municipal de DST/Aids.' },
+                { year: '1994', event: 'Implantação do Programa Saúde da Família (PSF).' },
+                { year: '1995', event: 'Início da municipalização das ações de vigilância epidemiológica.' },
+                { year: '1997', event: 'Criação do Programa Capital Criança, com foco na saúde materno-infantil.' },
+                { year: '2000', event: 'Implantação dos primeiros Centros de Atenção Psicossocial (CAPS).' },
+                { year: '2002', event: 'Início da informatização das unidades com o sistema InfoSaúde e lançamento da Residência Multiprofissional em Saúde da Família.' },
+                { year: '2004', event: 'Inauguração do primeiro serviço de Pronto Atendimento no Norte da Ilha.' },
+                { year: '2005', event: 'Adesão ao Programa Brasil Sorridente, fortalecendo a saúde bucal.' },
+                { year: '2006', event: 'Implantação dos primeiros Centros de Especialidades Odontológicas (CEOs) e publicação do Código Sanitário Municipal.' },
+                { year: '2007', event: 'Estabelecimento da Política Municipal de Saúde centrada na ESF, inauguração da Policlínica Centro e início da vacinação de recém-nascidos nas maternidades.' },
+                { year: '2008', event: 'Inauguração da UPA Sul, Policlínica Sul e Policlínica Continente; incorporação do LAMUF à Vigilância em Saúde; criação do Centro de Controle de Zoonoses.' },
+                { year: '2009', event: 'Inauguração da Policlínica e UPA Norte e implantação da Regulação do Acesso Ambulatorial.' },
+                { year: '2010', event: 'Realização do Planejamento Estratégico da SMS, conclusão da informatização de 100% das unidades e criação da Diretoria de Bem-Estar Animal.' },
+                { year: '2011', event: 'Florianópolis é premiada no InovaSUS pela estratégia de Educação Permanente e publica o primeiro Protocolo Municipal de Atenção à Saúde Bucal.' },
+                { year: '2012', event: 'Lançamento do Prêmio de Boas Práticas em Saúde.' },
+                { year: '2013', event: 'Novo prêmio no InovaSUS pelo projeto de Monitoramento do Planejamento e implantação do Modelo de Consulta de Enfermagem (CIPE).' },
+                { year: '2014', event: 'Implementação da Política Municipal de Educação Permanente, criação da Comissão de Sistematização da Assistência de Enfermagem, início da Residência Médica em Medicina de Família, destaque no PMAQ e novo prêmio InovaSUS.' },
+                { year: '2015', event: 'Implantação da Residência Multiprofissional em parceria com a UDESC, alcance de 100% de cobertura da ESF, criação da CFT e VISAT, e início do projeto Ambulatório Trans.' },
+                { year: '2016', event: 'Criação da Escola de Saúde Pública, implantação dos Protocolos de Enfermagem e publicação da Política Municipal de Atenção Primária à Saúde (PMAPS).' },
+                { year: '2017', event: 'Instituição da Política Municipal de Regulação.' },
+                { year: '2018', event: 'Instituição da Comissão Intersetorial da Rede Vida no Trânsito.' },
+                { year: '2019', event: 'Inauguração da UPA Continente e participação no Laboratório de Inovação em Saúde da Enfermagem.' },
+                { year: '2020', event: 'Criação do Grupo Sanear Floripa, enfrentamento da pandemia de COVID-19, implantação do serviço "Alô Saúde" e início da Residência Médica em Psiquiatria.' },
+                { year: '2021', event: 'Reconhecimento nacional no Laboratório de Inovação em Enfermagem (Cofen/OPAS).' },
+                { year: '2022', event: 'Inauguração da Policlínica da Mulher e da Criança e criação do Núcleo de Gestão da Qualidade da Vigilância Sanitária.' },
+                { year: '2023', event: 'Início do projeto "Trilha de Aprendizagem dos Trabalhadores da SMS" e instituição do Programa Vigidesastres.' },
+                { year: '2024', event: 'Lançamento da Política Municipal de Planejamento, instituição do Programa Monitora Saúde Floripa, inauguração do MultiHospital e realização da 1ª Conferência Municipal de Saúde da População Negra.' },
+                { year: '2025', event: 'Início das Residências Multiprofissional em Gestão em Saúde, Uniprofissional em Enfermagem e da Especialização em Gestão e Liderança.' }
+            ];
+            
+            const timelineContainerNew = document.getElementById('timeline-container-new');
+            
+            const renderNewTimeline = () => {
+                if (!timelineContainerNew) return;
+                timelineContainerNew.innerHTML = ''; // Clear existing items
+
+                timelineData.forEach((item, index) => {
+                    const isLeft = index % 2 !== 0; 
+                    const entryDiv = document.createElement('div');
+                    entryDiv.className = `timeline-entry-new ${isLeft ? 'timeline-left' : 'timeline-right'}`;
+
+                    entryDiv.innerHTML = `
+                        <div class="timeline-content-new">
+                            <h4 class="font-bold text-lg text-[#005a9c]">${item.year}</h4>
+                            <p class="text-sm text-gray-700 mt-1">${item.event}</p>
+                        </div>
+                    `;
+                    timelineContainerNew.appendChild(entryDiv);
+                });
+            };
+
+            if (timelineToggle && timelineContent && timelineIcon) {
+                timelineToggle.addEventListener('click', () => {
+                    timelineContent.classList.toggle('open');
+                    timelineIcon.classList.toggle('rotate-180');
+                });
+            }
+            
+            renderNewTimeline();
+
+
+            // Lógica das Abas (Tabs)
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.dataset.tab;
+
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    tabContents.forEach(content => {
+                        if (content.id === tabId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
                 });
             });
         });
-
     </script>
 </body>
 </html>
